@@ -7,7 +7,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
   end
 
   allow do
-    origins 'https://auth-app-api-rails-react.herokuapp.com/'
+    origins 'https://uzor-react-auth.herokuapp.com/'
     resource '*', headers: :any, methods: %i[get post patch put delete options head], credentials: true
   end
 end
