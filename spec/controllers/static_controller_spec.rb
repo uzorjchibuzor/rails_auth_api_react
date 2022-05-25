@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 # spec/controllers/static_controller.spec.rb
-require "rails_helper"
+require 'rails_helper'
 
 RSpec.describe StaticController, type: :controller do
-  
   describe '#home' do
     it 'returns a json object' do
       get :home
