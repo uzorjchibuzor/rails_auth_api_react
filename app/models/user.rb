@@ -3,6 +3,6 @@
 # User model class
 class User < ApplicationRecord
   has_secure_password
-  validates_presence_of :email
-  validates_uniqueness_of :email
+
+  validates :email, presence: true, uniqueness: true, format: URI::MailTo::EMAIL_REGEXP
 end
